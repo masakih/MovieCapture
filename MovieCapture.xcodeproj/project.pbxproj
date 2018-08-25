@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F49963CF212EECF700DCD954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49963CE212EECF700DCD954 /* AppDelegate.swift */; };
+		F49963D1212EECF800DCD954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49963D0212EECF800DCD954 /* Assets.xcassets */; };
+		F49963D4212EECF800DCD954 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49963D2212EECF800DCD954 /* MainMenu.xib */; };
+		F49963E0212EECF800DCD954 /* MovieCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49963DF212EECF800DCD954 /* MovieCaptureTests.swift */; };
+		F49963EF212EED1D00DCD954 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49963ED212EED1D00DCD954 /* WindowController.swift */; };
+		F49963F0212EED1D00DCD954 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49963EE212EED1D00DCD954 /* WindowController.xib */; };
+		F49964262130F4C900DCD954 /* MovieCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F499641D2130F4C800DCD954 /* MovieCapture.framework */; };
+		F499642D2130F4CA00DCD954 /* MovieCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499642C2130F4CA00DCD954 /* MovieCaptureTests.swift */; };
+		F499643A2130F55500DCD954 /* MovieCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F499641D2130F4C800DCD954 /* MovieCapture.framework */; };
+		F499643B2130F55500DCD954 /* MovieCapture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F499641D2130F4C800DCD954 /* MovieCapture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F499643F2130F56700DCD954 /* MovieCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49963F1212EEDB600DCD954 /* MovieCapture.swift */; };
+		F49964402130F5CF00DCD954 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49963EB212EED0400DCD954 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F49963DC212EECF800DCD954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49963C3212EECF600DCD954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49963CA212EECF700DCD954;
+			remoteInfo = MovieCapture;
+		};
+		F49964272130F4C900DCD954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49963C3212EECF600DCD954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F499641C2130F4C800DCD954;
+			remoteInfo = MovieCapture;
+		};
+		F49964292130F4CA00DCD954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49963C3212EECF600DCD954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49963CA212EECF700DCD954;
+			remoteInfo = MovieCaptureApp;
+		};
+		F499643C2130F55600DCD954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49963C3212EECF600DCD954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F499641C2130F4C800DCD954;
+			remoteInfo = MovieCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F499643E2130F55600DCD954 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F499643B2130F55500DCD954 /* MovieCapture.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F4254534213126ED00FBA98F /* MovieCaptureApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieCaptureApp.entitlements; sourceTree = "<group>"; };
+		F49963CB212EECF700DCD954 /* MovieCaptureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieCaptureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49963CE212EECF700DCD954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F49963D0212EECF800DCD954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F49963D3212EECF800DCD954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F49963D5212EECF800DCD954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49963D6212EECF800DCD954 /* MovieCapture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MovieCapture.entitlements; sourceTree = "<group>"; };
+		F49963DB212EECF800DCD954 /* MovieCaptureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieCaptureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49963DF212EECF800DCD954 /* MovieCaptureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureTests.swift; sourceTree = "<group>"; };
+		F49963E1212EECF800DCD954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49963EB212EED0400DCD954 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F49963ED212EED1D00DCD954 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		F49963EE212EED1D00DCD954 /* WindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		F49963F1212EEDB600DCD954 /* MovieCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCapture.swift; sourceTree = "<group>"; };
+		F49963FA2130F34600DCD954 /* MovieCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCapture.h; sourceTree = "<group>"; };
+		F49963FB2130F34600DCD954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F499641D2130F4C800DCD954 /* MovieCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49964252130F4C900DCD954 /* MovieCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F499642C2130F4CA00DCD954 /* MovieCaptureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCaptureTests.swift; sourceTree = "<group>"; };
+		F499642E2130F4CA00DCD954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49963C8212EECF700DCD954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F499643A2130F55500DCD954 /* MovieCapture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49963D8212EECF800DCD954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49964192130F4C800DCD954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49964402130F5CF00DCD954 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49964222130F4C900DCD954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49964262130F4C900DCD954 /* MovieCapture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F49963C2212EECF600DCD954 = {
+			isa = PBXGroup;
+			children = (
+				F49963F92130F34600DCD954 /* MovieCapture */,
+				F499642B2130F4CA00DCD954 /* MovieCaptureTests */,
+				F49963CD212EECF700DCD954 /* MovieCaptureApp */,
+				F49963DE212EECF800DCD954 /* MovieCaptureAppTests */,
+				F49963CC212EECF700DCD954 /* Products */,
+				F49963EA212EED0400DCD954 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F49963CC212EECF700DCD954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49963CB212EECF700DCD954 /* MovieCaptureApp.app */,
+				F49963DB212EECF800DCD954 /* MovieCaptureAppTests.xctest */,
+				F499641D2130F4C800DCD954 /* MovieCapture.framework */,
+				F49964252130F4C900DCD954 /* MovieCaptureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49963CD212EECF700DCD954 /* MovieCaptureApp */ = {
+			isa = PBXGroup;
+			children = (
+				F4254534213126ED00FBA98F /* MovieCaptureApp.entitlements */,
+				F49963CE212EECF700DCD954 /* AppDelegate.swift */,
+				F49963ED212EED1D00DCD954 /* WindowController.swift */,
+				F49963EE212EED1D00DCD954 /* WindowController.xib */,
+				F49963D0212EECF800DCD954 /* Assets.xcassets */,
+				F49963D2212EECF800DCD954 /* MainMenu.xib */,
+				F49963D5212EECF800DCD954 /* Info.plist */,
+				F49963D6212EECF800DCD954 /* MovieCapture.entitlements */,
+			);
+			path = MovieCaptureApp;
+			sourceTree = "<group>";
+		};
+		F49963DE212EECF800DCD954 /* MovieCaptureAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49963DF212EECF800DCD954 /* MovieCaptureTests.swift */,
+				F49963E1212EECF800DCD954 /* Info.plist */,
+			);
+			path = MovieCaptureAppTests;
+			sourceTree = "<group>";
+		};
+		F49963EA212EED0400DCD954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F49963EB212EED0400DCD954 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F49963F92130F34600DCD954 /* MovieCapture */ = {
+			isa = PBXGroup;
+			children = (
+				F49963F1212EEDB600DCD954 /* MovieCapture.swift */,
+				F49963FA2130F34600DCD954 /* MovieCapture.h */,
+				F49963FB2130F34600DCD954 /* Info.plist */,
+			);
+			path = MovieCapture;
+			sourceTree = "<group>";
+		};
+		F499642B2130F4CA00DCD954 /* MovieCaptureTests */ = {
+			isa = PBXGroup;
+			children = (
+				F499642C2130F4CA00DCD954 /* MovieCaptureTests.swift */,
+				F499642E2130F4CA00DCD954 /* Info.plist */,
+			);
+			path = MovieCaptureTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F499641A2130F4C800DCD954 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F49963CA212EECF700DCD954 /* MovieCaptureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49963E4212EECF800DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureApp" */;
+			buildPhases = (
+				F49963C7212EECF700DCD954 /* Sources */,
+				F49963C8212EECF700DCD954 /* Frameworks */,
+				F49963C9212EECF700DCD954 /* Resources */,
+				F499643E2130F55600DCD954 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F499643D2130F55600DCD954 /* PBXTargetDependency */,
+			);
+			name = MovieCaptureApp;
+			productName = MovieCapture;
+			productReference = F49963CB212EECF700DCD954 /* MovieCaptureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F49963DA212EECF800DCD954 /* MovieCaptureAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49963E7212EECF800DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureAppTests" */;
+			buildPhases = (
+				F49963D7212EECF800DCD954 /* Sources */,
+				F49963D8212EECF800DCD954 /* Frameworks */,
+				F49963D9212EECF800DCD954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49963DD212EECF800DCD954 /* PBXTargetDependency */,
+			);
+			name = MovieCaptureAppTests;
+			productName = MovieCaptureTests;
+			productReference = F49963DB212EECF800DCD954 /* MovieCaptureAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F499641C2130F4C800DCD954 /* MovieCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49964342130F4CA00DCD954 /* Build configuration list for PBXNativeTarget "MovieCapture" */;
+			buildPhases = (
+				F49964182130F4C800DCD954 /* Sources */,
+				F49964192130F4C800DCD954 /* Frameworks */,
+				F499641A2130F4C800DCD954 /* Headers */,
+				F499641B2130F4C800DCD954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieCapture;
+			productName = MovieCapture;
+			productReference = F499641D2130F4C800DCD954 /* MovieCapture.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F49964242130F4C900DCD954 /* MovieCaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49964372130F4CA00DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureTests" */;
+			buildPhases = (
+				F49964212130F4C900DCD954 /* Sources */,
+				F49964222130F4C900DCD954 /* Frameworks */,
+				F49964232130F4C900DCD954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49964282130F4C900DCD954 /* PBXTargetDependency */,
+				F499642A2130F4CA00DCD954 /* PBXTargetDependency */,
+			);
+			name = MovieCaptureTests;
+			productName = MovieCaptureTests;
+			productReference = F49964252130F4C900DCD954 /* MovieCaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49963C3212EECF600DCD954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Hori,Masaki";
+				TargetAttributes = {
+					F49963CA212EECF700DCD954 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					F49963DA212EECF800DCD954 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F49963CA212EECF700DCD954;
+					};
+					F499641C2130F4C800DCD954 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F49964242130F4C900DCD954 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F49963CA212EECF700DCD954;
+					};
+				};
+			};
+			buildConfigurationList = F49963C6212EECF600DCD954 /* Build configuration list for PBXProject "MovieCapture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49963C2212EECF600DCD954;
+			productRefGroup = F49963CC212EECF700DCD954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F499641C2130F4C800DCD954 /* MovieCapture */,
+				F49964242130F4C900DCD954 /* MovieCaptureTests */,
+				F49963CA212EECF700DCD954 /* MovieCaptureApp */,
+				F49963DA212EECF800DCD954 /* MovieCaptureAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49963C9212EECF700DCD954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49963D1212EECF800DCD954 /* Assets.xcassets in Resources */,
+				F49963F0212EED1D00DCD954 /* WindowController.xib in Resources */,
+				F49963D4212EECF800DCD954 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49963D9212EECF800DCD954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F499641B2130F4C800DCD954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49964232130F4C900DCD954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49963C7212EECF700DCD954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49963CF212EECF700DCD954 /* AppDelegate.swift in Sources */,
+				F49963EF212EED1D00DCD954 /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49963D7212EECF800DCD954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49963E0212EECF800DCD954 /* MovieCaptureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49964182130F4C800DCD954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F499643F2130F56700DCD954 /* MovieCapture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49964212130F4C900DCD954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F499642D2130F4CA00DCD954 /* MovieCaptureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F49963DD212EECF800DCD954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49963CA212EECF700DCD954 /* MovieCaptureApp */;
+			targetProxy = F49963DC212EECF800DCD954 /* PBXContainerItemProxy */;
+		};
+		F49964282130F4C900DCD954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F499641C2130F4C800DCD954 /* MovieCapture */;
+			targetProxy = F49964272130F4C900DCD954 /* PBXContainerItemProxy */;
+		};
+		F499642A2130F4CA00DCD954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49963CA212EECF700DCD954 /* MovieCaptureApp */;
+			targetProxy = F49964292130F4CA00DCD954 /* PBXContainerItemProxy */;
+		};
+		F499643D2130F55600DCD954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F499641C2130F4C800DCD954 /* MovieCapture */;
+			targetProxy = F499643C2130F55600DCD954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F49963D2212EECF800DCD954 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49963D3212EECF800DCD954 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49963E2212EECF800DCD954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F49963E3212EECF800DCD954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F49963E5212EECF800DCD954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MovieCaptureApp/MovieCaptureApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F49963E6212EECF800DCD954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MovieCaptureApp/MovieCaptureApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F49963E8212EECF800DCD954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCaptureApp.app/Contents/MacOS/MovieCaptureApp";
+			};
+			name = Debug;
+		};
+		F49963E9212EECF800DCD954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCaptureApp.app/Contents/MacOS/MovieCaptureApp";
+			};
+			name = Release;
+		};
+		F49964352130F4CA00DCD954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MovieCapture/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCapture;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F49964362130F4CA00DCD954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MovieCapture/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCapture;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F49964382130F4CA00DCD954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCaptureApp.app/Contents/MacOS/MovieCaptureApp";
+			};
+			name = Debug;
+		};
+		F49964392130F4CA00DCD954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MovieCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MovieCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCaptureApp.app/Contents/MacOS/MovieCaptureApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49963C6212EECF600DCD954 /* Build configuration list for PBXProject "MovieCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49963E2212EECF800DCD954 /* Debug */,
+				F49963E3212EECF800DCD954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49963E4212EECF800DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49963E5212EECF800DCD954 /* Debug */,
+				F49963E6212EECF800DCD954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49963E7212EECF800DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49963E8212EECF800DCD954 /* Debug */,
+				F49963E9212EECF800DCD954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49964342130F4CA00DCD954 /* Build configuration list for PBXNativeTarget "MovieCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49964352130F4CA00DCD954 /* Debug */,
+				F49964362130F4CA00DCD954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49964372130F4CA00DCD954 /* Build configuration list for PBXNativeTarget "MovieCaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49964382130F4CA00DCD954 /* Debug */,
+				F49964392130F4CA00DCD954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F49963C3212EECF600DCD954 /* Project object */;
+}
