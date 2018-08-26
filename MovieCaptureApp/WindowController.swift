@@ -20,13 +20,6 @@ class WindowController: NSWindowController {
         
         return NSNib.Name(String(describing: type(of: self)))
     }
-
-    override func windowDidLoad() {
-        super.windowDidLoad()
-
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    }
-    
     
     @IBAction private func set(_: Any) {
         
