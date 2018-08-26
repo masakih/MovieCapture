@@ -139,6 +139,7 @@ public class MovieCapture: NSObject {
         
         //
         guard !audioDeviceAdded else { return }
+        audioDeviceAdded = true
         
         try AVCaptureDevice.devices(for: .audio)
             .filter { $0.localizedName.hasPrefix("Soundflower") }
@@ -148,8 +149,6 @@ public class MovieCapture: NSObject {
                 guard session.canAddInput(audioInput) else { return }
                 session.addInput(audioInput)
         }
-        
-        audioDeviceAdded = true
     }
     
     private func setupFileOutput(_ url: URL) throws {
@@ -198,7 +197,6 @@ public class MovieCapture: NSObject {
     }
 }
 
-
 extension MovieCapture: AVCaptureFileOutputDelegate {
     
     public func fileOutputShouldProvideSampleAccurateRecordingStart(_ output: AVCaptureFileOutput) -> Bool {
@@ -214,5 +212,4 @@ extension MovieCapture: AVCaptureFileOutputRecordingDelegate {
         completionHandler?(outputFileURL, error)
         completionHandler = nil
     }
-    
 }
