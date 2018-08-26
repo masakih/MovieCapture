@@ -13,9 +13,11 @@ capture movie at your application for macOS
 ```swift
 import MovieCapture
 
-class ViewCOntroller: NSViewController {
+class ViewController: NSViewController {
 
     private var capture: MovieCapture?
+    
+    private let captureFrame = NSRect(x: 0, y: 0, width: 100, height: 100)
     
     @IBAction private func start(_: Any) {
         
